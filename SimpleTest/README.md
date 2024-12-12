@@ -1,63 +1,21 @@
-### Optimized README for Vue 3 + TypeScript + Vite Template
+# 1. 设计思路
+通过 **输入验证** 提高用户输入的准确性。邮箱和密码输入框都附加了验证逻辑，确保用户输入有效。  
+使用 `el-alert` 提供错误信息反馈，让用户在输入错误时立即得到提示。  
+将表单的逻辑处理（如验证和登录）与 UI 组件分离，使代码保持清晰和可维护。  
+将模拟的登录请求放入 `login` 方法中，使其具备通常登录逻辑的框架，虽然目前是模拟的，但可根据需要扩展为真实的网络请求。
 
-# **Vue 3 + TypeScript + Vite Starter Template**
+# 2. 技术选型
+- **分离关注点**：将表单的逻辑（如输入验证和登录处理）与用户界面组件分离，采用清晰的函数来处理这些逻辑。这种分离使得代码更组织化，便于理解和测试。
+- **使用 ref 管理状态**：通过 Vue 3 的响应式 API（`ref`）来管理输入框的状态，可以简化状态的更新和反应。所有需要监控的状态（如接受邮箱、密码、加载状态和错误信息）都以响应式的方式定义。
+- **异步处理**：将模拟的登录请求放入 `login` 方法中，采用定时器 (`setTimeout`) 模拟网络请求的行为。这种设计便于未来扩展为真实的网络请求，比如使用 `axios` 发起 API 调用。
 
-This template provides a quick start for developing with **Vue 3** and **TypeScript** using **Vite**. It is configured to utilize the latest features of Vue 3, including the `<script setup>` syntax for Single File Components (SFCs).
-
----
-
-## **Features**
-
-- **Vue 3**: Leverage the progressive framework for building modern user interfaces.
-- **TypeScript**: Strong typing for better maintainability and scalability.
-- **Vite**: A fast build tool with lightning-fast HMR for an efficient development experience.
-- **`<script setup>` SFCs**: Simplified syntax for cleaner and more intuitive components. Learn more in the [Script Setup Documentation](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup).
-
----
-
-## **Getting Started**
-
-Follow the steps below to set up and run the project:
-
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-2. **Start the development server**:
-   ```bash
-   npm run dev
-   ```
-
-3. Open your browser and navigate to the URL provided in the terminal.
-
----
-
-## **Documentation**
-
-- [Vue 3 Documentation](https://vuejs.org/guide/introduction.html)  
-- [Vite Documentation](https://vitejs.dev/guide/)  
-- [TypeScript Documentation](https://www.typescriptlang.org/docs/)  
-
-For an in-depth guide to setting up a Vue 3 project with TypeScript, refer to the [Vue TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
-
----
-
-## **Recommended Tools**
-
-- **IDE**: [Visual Studio Code](https://code.visualstudio.com/)
-  - Install extensions for enhanced productivity:
-    - [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar): Vue 3 support.
-    - [TypeScript Vue Plugin (Volar)](https://github.com/vuejs/language-tools): Official TypeScript integration.
-- **Browser DevTools**:
-  - [Vue Devtools](https://devtools.vuejs.org/): Debugging and performance analysis.
-
----
-
-## **License**
-
-This project is licensed under the MIT License. You are free to use, modify, and distribute it as needed.
-
----
-
-This optimized README focuses on providing clear, structured, and actionable information for developers, making it easier to start and understand the project.
+# 3. 求职信息
+- **求职等级**：初级
+- **期望薪资**：7000
+- **期望工作形式**：混合办公
+- **是否在常州居住**：否
+- **是否需要提供住宿**：能的话最好
+- **最快到岗时间**：立刻
+- **遇到的问题**：在大型应用中，组件之间的通信会变得复杂，特别是涉及多个层级的父子组件和兄弟组件。对此采用状态管理工具（如 Vuex）来管理状态会更加合适。
+在大型应用中，组件之间的通信会变得复杂，特别是涉及多个层级的父子组件和兄弟组件。对此采用状态管理工具
+-**未来三年规划**：潜心钻研技术，争取成为一名优秀的全栈工程师。
